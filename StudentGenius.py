@@ -58,11 +58,13 @@ for i in range(15):
 #navigating to next screen and setting up the widgets
 def home():
     for widgets in win.winfo_children():
+      ```
         if 'iconBtn' in dir():
             if widgets != iconBtn and widgets != help_btn:
                 widgets.destroy()
         else:
             widgets.destroy()
+       ```
 
     win.config(bg = "#11635b")
     
